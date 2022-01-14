@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yER-FC-Fcg">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="hQT-2C-iwZ">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" id="yER-FC-Fcg" customClass="LoginViewController" customModule="VIPERSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wJB-ZN-56v">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome back" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8JO-2W-exv">
+                                <rect key="frame" x="32" y="76" width="166" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Log in to your account" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yNd-jR-Hpn">
+                                <rect key="frame" x="32" y="114" width="285.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eAQ-qp-oZY" customClass="TextField" customModule="VIPERSample" customModuleProvider="target">
+                                <rect key="frame" x="32" y="166.5" width="350" height="44"/>
+                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                <color key="tintColor" name="Tint"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="3kX-Xn-AyI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" textContentType="email"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iWe-HG-2IK" customClass="TextField" customModule="VIPERSample" customModuleProvider="target">
+                                <rect key="frame" x="32" y="226.5" width="350" height="44"/>
+                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                <color key="tintColor" name="Tint"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="25v-kr-Oz2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ntg-3e-VN2">
+                                <rect key="frame" x="32" y="802" width="350" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="fJI-6s-znj"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Log in">
+                                    <backgroundConfiguration key="background" cornerRadius="8">
+                                        <color key="backgroundColor" name="Tint"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="17"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="login" destination="yER-FC-Fcg" eventType="touchUpInside" id="OnM-IQ-42w"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="zJx-qE-2nn"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ntg-3e-VN2" firstAttribute="leading" secondItem="zJx-qE-2nn" secondAttribute="leading" constant="32" id="4I4-v7-iVv"/>
+                            <constraint firstItem="zJx-qE-2nn" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="yNd-jR-Hpn" secondAttribute="trailing" constant="32" id="7cU-g0-0ul"/>
+                            <constraint firstItem="8JO-2W-exv" firstAttribute="top" secondItem="zJx-qE-2nn" secondAttribute="top" priority="750" constant="32" id="9yv-f0-FLu"/>
+                            <constraint firstItem="yNd-jR-Hpn" firstAttribute="top" secondItem="8JO-2W-exv" secondAttribute="bottom" constant="8" symbolic="YES" id="CcN-fP-h0j"/>
+                            <constraint firstItem="yNd-jR-Hpn" firstAttribute="leading" secondItem="zJx-qE-2nn" secondAttribute="leading" constant="32" id="EoY-Ba-Yze"/>
+                            <constraint firstItem="8JO-2W-exv" firstAttribute="leading" secondItem="zJx-qE-2nn" secondAttribute="leading" constant="32" id="Q7P-L8-z1V"/>
+                            <constraint firstItem="zJx-qE-2nn" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="8JO-2W-exv" secondAttribute="trailing" constant="32" id="RYY-w7-GDz"/>
+                            <constraint firstItem="zJx-qE-2nn" firstAttribute="trailing" secondItem="Ntg-3e-VN2" secondAttribute="trailing" constant="32" id="dag-MV-DZf"/>
+                            <constraint firstItem="Ntg-3e-VN2" firstAttribute="top" relation="greaterThanOrEqual" secondItem="iWe-HG-2IK" secondAttribute="bottom" constant="16" id="e0A-Mj-i4G"/>
+                            <constraint firstItem="iWe-HG-2IK" firstAttribute="top" secondItem="eAQ-qp-oZY" secondAttribute="bottom" constant="16" id="epq-8d-JE5"/>
+                            <constraint firstItem="eAQ-qp-oZY" firstAttribute="leading" secondItem="zJx-qE-2nn" secondAttribute="leading" constant="32" id="jGW-VT-H25"/>
+                            <constraint firstItem="eAQ-qp-oZY" firstAttribute="top" secondItem="yNd-jR-Hpn" secondAttribute="bottom" constant="32" id="jLJ-QM-Mdj"/>
+                            <constraint firstItem="zJx-qE-2nn" firstAttribute="trailing" secondItem="iWe-HG-2IK" secondAttribute="trailing" constant="32" id="lV0-vi-FZQ"/>
+                            <constraint firstItem="iWe-HG-2IK" firstAttribute="leading" secondItem="zJx-qE-2nn" secondAttribute="leading" constant="32" id="tEV-eL-xVv"/>
+                            <constraint firstItem="zJx-qE-2nn" firstAttribute="bottom" secondItem="Ntg-3e-VN2" secondAttribute="bottom" constant="16" id="wIA-zr-7FI"/>
+                            <constraint firstItem="zJx-qE-2nn" firstAttribute="trailing" secondItem="eAQ-qp-oZY" secondAttribute="trailing" constant="32" id="z3O-Uf-vjX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emailField" destination="eAQ-qp-oZY" id="fPX-As-zmP"/>
+                        <outlet property="passwordField" destination="iWe-HG-2IK" id="hyQ-JM-n5E"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e0r-xg-bvW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-614" y="227"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="Tint">
+            <color red="0.10196078431372549" green="0.74117647058823533" blue="0.81176470588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
